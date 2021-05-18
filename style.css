@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+:root {
+    --primaryColor: #25235b;
+    --secondaryColor: #ee666c;  /*rgb(238, 102, 108)*/
+    --tertiaryColor: #69c5d7;
+    --black: #212529;
+    --lightGray: #f3f3f2;
+    --white: #fff;
+    --fontSize: 16px;
+    --fontFamily: 'Poppins', sans-serif;
+    --transition: .5s ease;
+    --boxShadow: 0 0 20px gray;
+}
+/*****************
+basic styles
+*****************/
+body {
+    font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+}
+/*****************
+nav
+*****************/
+nav {
+    padding: 15px !important;
+}
+.navbar-brand img {
+    width: 150px;
+}
+.navbar-brand {
+    transition: var(--transition);
+}
+.navbar-brand:hover {
+    opacity: .8;
+}
+.nav-link {
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.nav-link:hover {
+    color: var(--white);
+    text-shadow: 0 0 10px var(--secondaryColor);
+}
+/*****************
+mainHeader
+*****************/
+.mainHeader {
+    background-image: linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0, .5)), url(img/header3.jpg);
+    height: 60vh;
+    background-size: cover;
+}
+/*****************
+intro
+*****************/
+.intro {
+    background-color: var(--primaryColor);
+    margin-top: -100px;
+    padding: 50px;
+}
+.intro h1 {
+    text-shadow: 0 0 10px var(--secondaryColor);
+    font-weight: 800;
+    font-size: 7rem;
+    margin-top: -180px;
+}
+.intro h3 {
+    font-weight: 600;
+    color: var(--secondaryColor);
+    text-shadow: 0 0 1px var(--white);
+    text-transform: uppercase;
+}
