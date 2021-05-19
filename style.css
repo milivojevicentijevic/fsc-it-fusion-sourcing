@@ -28,6 +28,7 @@ nav
 *****************/
 nav {
     padding: 15px !important;
+    /* background-color: var(--primaryColor); */
 }
 .navbar-brand img {
     width: 150px;
@@ -78,13 +79,14 @@ intro
 /*****************
 services
 *****************/
-.services .col-md-4 div {
+.services .single {
     padding: 40px;
-}
-.services .col-md-4 div:first-child {
     margin-bottom: 30px;
 }
-.services .redish {
+.services .single:last-child {
+    margin-bottom: 0px;
+}
+.services .reddish {
     background-color: var(--secondaryColor);
     color: var(--white);
 }
@@ -121,7 +123,7 @@ about
     font-size: 6.2rem;
     font-weight: 800;
 }
-.about .col-md-6:first-child .text {
+.about article > div:first-child .text {
     padding: 65px 80px 30px 0;
 }
 /*****************
@@ -241,4 +243,109 @@ blog
     background-color: var(--secondaryColor);
     position: relative;
     top: 18px;
+}
+
+/*****************
+RESPONSIVE
+*****************/
+@media (max-width: 1199px) {
+    .about .slide {
+        padding: 60px 60px 45px;
+    }
+    .about article > div:last-child .text {
+        flex-direction: column;
+        padding-top: 30px !important;
+    }
+    .about .text h2, .hdwContent h2 {
+        transform: 
+            rotate(0deg) 
+            translate( 0px, 0px)
+        ;
+    }
+    footer .row {
+        align-items: center;
+        justify-content: space-around !important;
+    }
+    footer .narrow {
+        flex: 0 0 40%;
+    }
+    footer .wide {
+        flex: 0 0 40%;
+    }
+}
+@media (max-width: 991px) {
+    .services article div:nth-child(1) {
+        padding-bottom: 0px !important;
+    }
+    .services article div:nth-child(2) {
+        padding-top: 30px !important;
+    }
+    .about .slide {
+        padding: 36px;
+    }
+    .about article > div:first-child .text {
+        padding: 50px 10px 30px 0;
+    }
+    .about .text h2, .hdwContent h2 {
+        font-size: 3.6rem;
+        font-weight: 600;
+    }
+}
+@media (max-width: 767px) {
+    .intro h1 {
+        font-size: 3.6rem;
+        margin-top: -120px;
+    }
+    .intro h3 {
+        font-weight: 400;
+        font-size: 1.3rem;
+    }
+    .services .single {
+        padding: 30px;
+    }
+    .services .single p {
+        padding-bottom: 20px;
+    }
+    .services article div:nth-child(3) {
+        padding-top: 30px !important;
+    }
+    .services h3 {
+        font-weight: 600;
+        font-size: 1.4rem;
+    }
+    .about article > div {
+        padding-top: 0 !important;
+    }
+    .about .slide {
+        padding: 25px 45px 40px;
+    }
+    .about article > div:first-child .text {
+        padding: 40px 0 0;
+    }
+    footer {
+        padding: 50px 0;
+    }
+    footer .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .narrow {
+        flex: 0 0 100%;
+        padding: 15px;
+    }
+    footer .wide {
+        flex: 0 0 100%;
+        padding: 15px;
+    }
+    .hdwContent h2 + p {
+        margin: 15px 0 50px;
+    }
+    .education article > div,
+    .blog article > div {
+        margin-bottom: 50px;
+    }
+    .education article > div:last-child,
+    .blog article > div:last-child {
+        margin-bottom: 0;
+    }
 }
