@@ -94,3 +94,28 @@ services
     font-weight: 800;
     text-transform: uppercase;
 }
+/*****************
+about
+*****************/
+.about {
+    background-image: url(img/bg3.jpg);
+}
+.about .slide {
+    padding: 80px 80px 65px;
+    text-align: center;
+    background-color: var(--secondaryColor);
+}
+.about .text p {
+    padding-bottom: 10px;
+}
+.about .text h2 {
+    transform: 
+        rotate(-90deg) 
+        translate( -205px, -55px)
+    ;
+    font-size: 6.2rem;
+    font-weight: 800;
+}
+.about .col-md-6:first-child .text {
+    padding: 65px 80px 30px 0;
+}
