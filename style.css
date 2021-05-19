@@ -160,14 +160,14 @@ footer ul li:hover i {
 HOW DO WE WORK
 *****************/
 /*****************
-hdwHeader
+hdwHeader / eduHeader
 *****************/
-.hdwHeader {
+.hdwHeader, .eduHeader {
     background-image: linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0, .5)), url(img/header3.jpg);
     height: 46vh;
     background-size: cover;
 }
-.hdwHeader h2 {
+.hdwHeader h2, .eduHeader h2 {
     background-color: rgba(238, 102, 108, .8);
     padding: 20px 40px;
     color: var(--white);
@@ -204,4 +204,23 @@ hdwContent
 .hdwContent p:last-child {
     border-bottom: none;
     padding-bottom: 0;
+}
+
+/*****************
+EDUCATION
+*****************/
+/*****************
+education
+*****************/
+.education h3 {
+    color: var(--primaryColor);
+    font-size: 2rem;
+}
+.education .button {
+    background-color: var(--secondaryColor);
+    color: var(--white);
+    padding: 15px 30px;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
 }
