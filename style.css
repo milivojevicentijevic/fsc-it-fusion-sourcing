@@ -17,6 +17,11 @@ basic styles
 body {
     font-family: var(--fontFamily);
     font-size: var(--fontSize);
+    color: var(--black);
+}
+a {
+    text-decoration: none;
+    transition: var(--transition);
 }
 /*****************
 nav
@@ -118,4 +123,35 @@ about
 }
 .about .col-md-6:first-child .text {
     padding: 65px 80px 30px 0;
+}
+/*****************
+footer
+*****************/
+footer {
+    background-image: url(img/footer.jpg);
+    padding: 90px 0;
+}
+footer .narrow {
+    flex: 0 0 21%;
+}
+footer .wide {
+    flex: 0 0 28%;
+}
+footer h4 {
+    font-size: 1.75rem;
+    margin-bottom: 0;
+}
+footer ul li {
+    padding-top: 15px;
+    transition: var(--transition);
+}
+footer a, footer i {
+    color: var(--black);
+    transition: var(--transition);
+}
+footer a:hover, footer i:hover {
+    color: var(--primaryColor);
+}
+footer ul li:hover i {
+    color: var(--secondaryColor);
 }
