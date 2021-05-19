@@ -160,14 +160,14 @@ footer ul li:hover i {
 HOW DO WE WORK
 *****************/
 /*****************
-hdwHeader / eduHeader
+hdwHeader / eduHeader / blogHeader
 *****************/
-.hdwHeader, .eduHeader {
+.hdwHeader, .eduHeader, .blogHeader {
     background-image: linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0, .5)), url(img/header3.jpg);
     height: 46vh;
     background-size: cover;
 }
-.hdwHeader h2, .eduHeader h2 {
+.hdwHeader h2, .eduHeader h2, .blogHeader h2 {
     background-color: rgba(238, 102, 108, .8);
     padding: 20px 40px;
     color: var(--white);
@@ -212,7 +212,7 @@ EDUCATION
 /*****************
 education
 *****************/
-.education h3 {
+.education h3, .blog h3 {
     color: var(--primaryColor);
     font-size: 2rem;
 }
@@ -223,4 +223,22 @@ education
     cursor: pointer;
     display: inline-block;
     text-transform: uppercase;
+}
+/*****************
+BLOG
+*****************/
+/*****************
+blog
+*****************/
+.blog p {
+    margin-bottom: 36px;
+}
+.blog p::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 50px;
+    background-color: var(--secondaryColor);
+    position: relative;
+    top: 18px;
 }
